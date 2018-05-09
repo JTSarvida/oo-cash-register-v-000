@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :name, :discount, :total, :title, :items
+  attr_accessor :name, :discount, :total, :title, :items, :last_transaction 
   
 
   
@@ -36,5 +36,8 @@ class CashRegister
     @items
   end
   
-  
+  def self.void_last_transaction
+    last_index =
+    @items
+  end
 end  
