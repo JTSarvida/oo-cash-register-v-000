@@ -20,7 +20,7 @@ class CashRegister
     else
       @total += price
     end
-    
+    last_transaction = price*quantity
   end
   
   def apply_discount
@@ -36,8 +36,7 @@ class CashRegister
     @items
   end
   
-  def self.void_last_transaction
-    last_index = @items.length-1
-    last_item = @items[last_index]
+  def void_last_transaction
+      self.total -= self.last_transaction
   end
 end  
