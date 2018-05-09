@@ -17,10 +17,10 @@ class CashRegister
   end
   
   def apply_discount
-    @total -= discount*10
     if discount != 0
       "There is no discount to apply."
     else
+      @total -= discount*10
       "After the discount, the total comes to $#{@total}."
     end
   end
