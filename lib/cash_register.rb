@@ -28,8 +28,8 @@ class CashRegister
     end
   end
   
-  def items
-    return @@items
+  def self.items
+    @@items
   end
     
 end  
