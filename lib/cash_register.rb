@@ -13,7 +13,7 @@ class CashRegister
   def add_item(title, price, quantity = 0)
     @quantity = quantity
     quantity.times do
-      @@items << title
+      @items << title
     end
       
     if quantity != 0
@@ -34,7 +34,7 @@ class CashRegister
   end
   
   def items
-    @@items
+    @items
   end
     
 end  
