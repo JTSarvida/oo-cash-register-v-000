@@ -37,7 +37,7 @@ class CashRegister
   end
   
   def self.void_last_transaction
-    last_index =
-    @items
+    last_index = @items.length-1
+    @items[last_index]
   end
 end  
