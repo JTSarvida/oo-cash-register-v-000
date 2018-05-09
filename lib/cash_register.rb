@@ -24,5 +24,9 @@ class CashRegister
       "After the discount, the total comes to $#{@total}."
     end
   end
+  
+  def items
+    return title
+  end
     
 end  
