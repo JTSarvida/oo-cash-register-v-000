@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :name, :discount, :total, :title
+  attr_accessor :name, :discount, :total, :title, :items
   
   @@items = []
   
@@ -26,10 +26,6 @@ class CashRegister
     else
       "After the discount, the total comes to $#{@total}."
     end
-  end
-  
-  def items
-    @@items
   end
     
 end  
